@@ -16,6 +16,7 @@
  */
 $cfg['blowfish_secret'] = '51fxdSkZ0LmS61U2JhjBHoVy6i7SAFG'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
+$cfg['MemoryLimit']             = '512M';
 /*
  * Servers configuration
  */
@@ -31,6 +32,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = '192.168.3.5';
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
 $cfg['Servers'][$i]['compress'] = false;
+$cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 /*
